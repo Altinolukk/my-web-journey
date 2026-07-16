@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Comprehensive Guide</title>
+    
+    <!-- Meta Bilgileri -->
+    <meta name="keywords" content="Java, Python, JavaScript, C++, HTML, CSS">
+    <meta name="description" content="Free Programming Tutorials for beginners and advanced developers.">
+    <meta name="author" content="Mustafa Murat Coşkun">
+
+    <!-- CSS / Tablo ve Bölüm Tasarımları -->
+    <style>
+        body {
+            background-color: aqua;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+        }
+        h1 {
+            color: red;
+            font-size: 30px;
+        }
+        section {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. Bölüm: Başlık ve Giriş -->
+    <section>
+        <h1>Kırmızı Başlık</h1>
+        <!-- <h1>Başlık H1</h1> (Yorum satırı örneği) -->
+        <h3>Başlık 3</h3>
+        
+        <p style="font-size: 30px;">
+            Lorem <strong>ipsum</strong> dolor <em>sit</em> amet <small>consectetur</small> <sub>adipisicing</sub> elit. <mark>Assumenda</mark>, tem.
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique optio,<br>
+            maiores repellendus nisi repellat explicabo architecto! Aut dolor illum<br>
+            assumenda a, aliquam vel doloremque ex recusandae, aspernatur, natus.
+        </p>
+    </section>
+
+    <hr>
+
+    <!-- 2. Bölüm: Şiir / Format Korunmuş Metin (PRE) -->
+    <section>
+        <h3>Biçimlendirilmiş Metin (Preformatted Text)</h3>
+        <pre>
+Korkma, sönmez bu şafaklarda yüzen al sancak;
+Sönmeden yurdumun üstünde tüten en son ocak.
+O benim milletimin yıldızıdır, parlayacak;
+O benimdir, o benim milletimindir ancak.
+        </pre>
+    </section>
+
+    <hr>
+
+    <!-- 3. Bölüm: Bağlantılar ve Görseller -->
+    <section>
+        <h3>Bağlantılar ve Görseller</h3>
+        <!-- Google Bağlantısı -->
+        <p>
+            <a href="https://www.google.com" target="_blank" title="Google'a git">Google'a git</a>
+        </p>
+
+        <!-- Görsel Bağlantısı (Michael Jackson) -->
+        <p>
+            <a href="https://tr.wikipedia.org/wiki/Michael_Jackson" target="_blank">
+                <img src="./images/michael.jpg" height="200" alt="Michael Jackson" />
+            </a>
+        </p>
+    </section>
+
+    <hr>
+
+    <!-- 4. Bölüm: Tablolar -->
+    <section>
+        <h3>Personel Tablosu</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Department</th>
+                    <th>Salary</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mustafa</td>
+                    <td>Bilişim</td>
+                    <td>5000</td>
+                </tr>
+                <tr>
+                    <td>Mustafa</td>
+                    <td>Bilişim</td>
+                    <td>5000</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <hr>
+
+    <!-- 5. Bölüm: Listeler -->
+    <section>
+        <h3>HTML5 Unordered (Sırasız) Lists</h3>
+        <ul>
+            <li>Front End</li>
+            <ul>
+                <li>React</li>
+                <li>Vue</li>
+                <li>Angular</li>
+            </ul>
+            <li>Back End</li>
+            <ul>
+                <li>Python</li>
+                <li>Java</li>
+                <li>C#</li>
+            </ul>
+        </ul>
+
+        <h3>HTML5 Ordered (Sıralı) Lists</h3>
+        <ol type="a">
+            <li>Python</li>
+            <li>Java</li>
+            <li>JavaScript</li>
+        </ol>
+    </section>
+
+    <hr>
+
+    <!-- 6. Bölüm: Multimedya (Video & Ses) -->
+    <section>
+        <h3>Multimedya Ögeleri</h3>
+        
+        <!-- Video Oynatıcı -->
+        <div style="margin-bottom: 15px;">
+            <h4>Metallica Video</h4>
+            <video src="./videos/metallica.mp4" width="300px" controls autoplay>
+                Tarayıcı bu içerik türünü desteklemiyor.
+            </video>
+        </div>
+
+        <!-- Ses Oynatıcı -->
+        <div>
+            <h4>Metallica Audio</h4>
+            <audio src="./audios/metallica.mp3" controls autoplay>
+                Tarayıcı bu içeriği desteklemiyor.
+            </audio>
+        </div>
+    </section>
+
+</body>
+</html>
