@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Semantic Elements</title>
+    
+    <!-- Sayfa düzenini ve semantik bölümleri görselleştirecek modern CSS -->
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f6fa;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Üst Bilgi Alanı (Header) */
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        /* Navigasyon Barı (Nav) */
+        nav#topnav {
+            margin-top: 15px;
+        }
+
+        nav#topnav a {
+            color: #ecf0f1;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+
+        nav#topnav a:hover {
+            color: #3498db;
+        }
+
+        /* Ana İçerik Taşıyıcı Alan (Main Layout) */
+        .main-container {
+            display: flex;
+            flex: 1;
+            padding: 20px;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        /* İçerik Alanı (Sections) */
+        .content-area {
+            flex: 3;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        section {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        section h2 {
+            margin-top: 0;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 8px;
+        }
+
+        /* Bağımsız İçerikler (Article) */
+        article {
+            background-color: #f8f9fa;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+        }
+
+        /* Yan Menü (Aside) */
+        aside {
+            flex: 1;
+            background-color: #eef2f7;
+            padding: 20px;
+            border-radius: 8px;
+            align-self: flex-start;
+        }
+
+        aside h3 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+
+        nav#sidenav {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        nav#sidenav a {
+            color: #2980b9;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav#sidenav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Alt Bilgi Alanı (Footer) */
+        footer {
+            background-color: #2c3e50;
+            color: #bdc3c7;
+            text-align: center;
+            padding: 15px;
+            margin-top: auto;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header: Sitenin en üst kısmı ve ana başlıkları -->
+    <header>
+        <h1>Yazılım Bilimi</h1>
+        <!-- Topnav: Ana yönlendirme linkleri -->
+        <nav id="topnav">
+            <a href="#">Home</a>
+            <a href="#">Contact</a>
+            <a href="#">Service</a>
+        </nav>
+    </header>
+
+    <!-- Ana düzen için eklediğimiz taşıyıcı container -->
+    <div class="main-container">
+        
+        <!-- Sol/Orta İçerik Alanı -->
+        <div class="content-area">
+            
+            <!-- Section Little: Küçük makalelerin veya duyuruların olduğu bölüm -->
+            <section id="section-little">
+                <h2>Güncel Haberler (Section Little)</h2>
+                <article>
+                    <h4>Story 1</h4>
+                    <p>Yazılım dünyasından güncel gelişmeler ve yeni teknolojiler...</p>
+                </article>
+                <article>
+                    <h4>Story 2</h4>
+                    <p>Web standartlarında anlamsal etiketlerin önemi ve SEO ilişkisi.</p>
+                </article>
+                <article>
+                    <h4>Story 3</h4>
+                    <p>Frontend dünyasında yeni trendler.</p>
+                </article>
+            </section>
+
+            <!-- Section Big: Ana blog yazılarının veya detaylı içeriklerin olduğu bölüm -->
+            <section id="section-big">
+                <h2>Öne Çıkan Hikayeler (Section Big)</h2>
+                <article>
+                    <h4>Story 1</h4>
+                    <p>HTML5 ile birlikte gelen yeniliklerin detaylı analizi ve eski yapıların karşılaştırılması.</p>
+                </article>
+                <article>
+                    <h4>Story 2</h4>
+                    <p>CSS Flexbox ve Grid sistemleri ile modern sayfa düzenleri nasıl oluşturulur?</p>
+                </article>
+                <article>
+                    <h4>Story 3</h4>
+                    <p>Temiz kod yazma sanatı ve GitHub üzerinde düzenli bir portföy yönetimi.</p>
+                </article>
+            </section>
+
+        </div>
+
+        <!-- Aside: Sayfa içeriğiyle dolaylı yoldan ilişkili olan yan menü -->
+        <aside>
+            <h3>Faydalı Linkler</h3>
+            <nav id="sidenav">
+                <a href="#">Dökümantasyonlar</a>
+                <a href="#">Eğitim Serileri</a>
+                <a href="#">Sıkça Sorulan Sorular</a>
+            </nav>
+        </aside>
+
+    </div>
+
+    <!-- Footer: Telif hakları ve alt bilgi alanı -->
+    <footer>
+        <p>Copyright &copy; 2026 | Yazılım Bilimi. Tüm Hakları Saklıdır.</p>
+    </footer>
+
+</body>
+</html>
