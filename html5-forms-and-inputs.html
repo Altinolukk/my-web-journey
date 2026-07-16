@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Form ve Inputs</title>
+    
+    <!-- Formu GitHub Pages üzerinde veya yerelde açtığında harika gösterecek modern stil -->
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+        form {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 450px;
+        }
+        h2 {
+            margin-top: 0;
+            color: #333;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: 600;
+            color: #444;
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 14px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="password"]:focus,
+        input[type="date"]:focus,
+        select:focus,
+        textarea:focus {
+            border-color: #3498db;
+        }
+        .group-title {
+            font-weight: 600;
+            color: #444;
+            margin-top: 20px;
+            margin-bottom: 8px;
+            display: block;
+        }
+        .inline-group {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .inline-group label {
+            display: inline;
+            margin: 0;
+            font-weight: normal;
+            cursor: pointer;
+        }
+        textarea {
+            resize: vertical;
+            height: 100px;
+        }
+        .button-group {
+            margin-top: 25px;
+            display: flex;
+            gap: 10px;
+        }
+        button[type="reset"],
+        input[type="submit"] {
+            flex: 1;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        button[type="reset"] {
+            background-color: #e74c3c;
+            color: white;
+        }
+        button[type="reset"]:hover {
+            background-color: #c0392b;
+        }
+        input[type="submit"] {
+            background-color: #2ecc71;
+            color: white;
+        }
+        input[type="submit"]:hover {
+            background-color: #27ae60;
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <h2>HTML5 Kayıt Formu</h2>
+
+        <!-- HTML5 Inputs -->
+        <label for="name">Name</label>
+        <input type="text" placeholder="Your Name" id="name" name="name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required />
+
+        <label for="date">Date</label>
+        <input type="date" id="date" name="date" />
+
+        <!-- Radio Buttons (Gender) -->
+        <span class="group-title">Gender</span>
+        <div class="inline-group">
+            <input type="radio" name="gender" id="male" value="male" />
+            <label for="male">Male</label>
+            
+            <input type="radio" name="gender" id="female" value="female" />
+            <label for="female">Female</label>
+            
+            <input type="radio" name="gender" id="other" value="other" />
+            <label for="other">Other</label>
+        </div>
+
+        <!-- Checkboxes (Hobbies) -->
+        <span class="group-title">Hobbies</span>
+        <div class="inline-group">
+            <input type="checkbox" name="tech" id="tech" />
+            <label for="tech">Technology</label>
+            
+            <input type="checkbox" name="music" id="music" />
+            <label for="music">Music</label>
+            
+            <input type="checkbox" name="art" id="art" />
+            <label for="art">Art</label>
+        </div>
+
+        <!-- Select Dropdown (Degree) -->
+        <label for="degree">Degree</label>
+        <select name="degree" id="degree">
+            <option value="lisans">Lisans</option>
+            <option value="yuksek-lisans">Yüksek Lisans</option>
+            <option value="doktora" selected>Doktora</option>
+        </select>
+
+        <!-- Textarea (Message) -->
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Your Message"></textarea>
+
+        <!-- Form Buttons -->
+        <div class="button-group">
+            <button type="reset">Sıfırla</button>
+            <input type="submit" value="Submit" />
+        </div>
+    </form>
+
+</body>
+</html>
