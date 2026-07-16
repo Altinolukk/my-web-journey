@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Structure, Selectors and Bookmarks</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding-bottom: 500px; /* Bookmark testini rahat yapmak için sayfanın altına boşluk bıraktım */
+        }
+
+        /* 41. ID ve Class Örneği */
+        /* Class seçici (".") ile tüm kutulara ortak stil veriyoruz */
+        .box {
+            background-color: #f4f4f4;
+            border: 2px solid #333;
+            margin: 20px 0;
+            padding: 50px 20px; /* İç boşluk ekleyerek kutuları belirginleştirdim */
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        /* ID seçici ("#") ile sadece belirli bir kutuyu özelleştiriyoruz */
+        #box3 {
+            background-color: lightcoral;
+            color: white;
+        }
+
+        /* Block ve Inline Elementleri Görmek İçin Tasarım */
+        .block-demo {
+            background-color: lightblue;
+            padding: 10px;
+            margin-bottom: 10px;
+            /* Height ve Width değerlerini kabul eder */
+            width: 200px; 
+            height: 50px;
+        }
+
+        .inline-demo {
+            background-color: lightgreen;
+            padding: 5px;
+            /* UYARI: Height ve Width inline elemanlarda çalışmaz! */
+            width: 500px; 
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- BÖLÜM 1: Block ve Inline Elementler & Div ve Span -->
+    <section>
+        <h2>39 & 40. Block / Inline ve Div / Span Farkı</h2>
+        
+        <!-- DIV bir block elementtir, satırı tamamen kaplar -->
+        <div class="block-demo">
+            Ben bir DIV elementiyim (Block). Genişlik/yükseklik alabilirim.
+        </div>
+
+        <!-- SPAN bir inline elementtir, sadece içeriği kadar yer kaplar -->
+        <p>
+            Bu bir paragraftır. İçindeki 
+            <span class="inline-demo">SPAN elementi (Inline)</span> 
+            kodda width verilmesine rağmen genişlemez, sadece yazısı kadar yer kaplar.
+        </p>
+    </section>
+
+    <hr>
+
+    <!-- BÖLÜM 2: HTML Link - Bookmark Özelliği -->
+    <section>
+        <h2>42. HTML Sayfa İçi Link (Bookmark) Özelliği</h2>
+        <p>Aşağıdaki linklere tıkladığında sayfa otomatik olarak ilgili ID'ye sahip kutuya kayacaktır:</p>
+        
+        <ul>
+            <li><a href="#box1">Box 1'e Git</a></li>
+            <li><a href="#box2">Box 2'ye Git</a></li>
+            <li><a href="#box3">Box 3'e Git (Özel Renkli)</a></li>
+            <li><a href="#box4">Box 4'e Git</a></li>
+            <li><a href="#box5">Box 5'e Git</a></li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <!-- BÖLÜM 3: Kutular (ID ve Class Yapısı) -->
+    <!-- Class'lar (box) ortak özellikleri, ID'ler (box1, box2...) benzersiz adresleri temsil eder -->
+    <div id="box1" class="box">BOX 1</div>
+    <div id="box2" class="box">BOX 2</div>
+    <div id="box3" class="box">BOX 3 (ID ile Özel Tasarım Verildi)</div>
+    <div id="box4" class="box">BOX 4</div>
+    <div id="box5" class="box">BOX 5</div>
+
+</body>
+</html>
