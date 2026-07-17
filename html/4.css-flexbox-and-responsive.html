@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 Flexbox ve Responsive Tasarım</title>
+    <link rel="stylesheet" href="../css/4.flexbox-and-responsive-style.css">
+</head>
+<body>
+
+    <header>
+        <h1>CSS3 Flexbox & Responsive Layout</h1>
+        <p>Modern Sayfa Düzeni ve Mobil Uyumluluk Çalışması</p>
+    </header>
+
+    <main>
+        <!-- 68, 69, 70. Flexbox Container ve Item Yapıları -->
+        <section class="flex-section">
+            <h2>1. Modern Düzen: Flexbox</h2>
+            <p>Aşağıdaki kutular esnek bir satır düzeninde dizilmiştir ve ekran küçüldükçe alt satıra geçerler:</p>
+            
+            <div class="flex-container">
+                <div class="flex-item item-1">Kutu 1 (Esnek-Büyüyen)</div>
+                <div class="flex-item item-2">Kutu 2</div>
+                <div class="flex-item item-3">Kutu 3</div>
+            </div>
+        </section>
+
+        <!-- 71, 72. Responsive Tasarım, Media Queries ve Ölçü Birimleri -->
+        <section class="responsive-section">
+            <h2>2. Responsive Tasarım ve Ölçü Birimleri</h2>
+            
+            <div class="unit-box">
+                <h3>Bağıl Ölçü Birimleri</h3>
+                <p>Bu kutu yüksekliğini <code>vh</code> (viewport height), genişliğini ise yüzde <code>%</code> cinsinden alır.</p>
+            </div>
+
+            <div class="responsive-card">
+                <h3>Ekran Boyutuna Göre Değişen Kart</h3>
+                <p>Tarayıcı genişliğini değiştirerek (Örn: Mobil görünüm) bu kartın arka plan renginin ve yazı boyutunun nasıl adapte olduğunu gözlemleyebilirsin.</p>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
