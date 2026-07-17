@@ -1,0 +1,123 @@
+/* Genel Sıfırlama */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 72. Kök öğede font boyutunu sabitleyerek rem birimlerini kontrol ediyoruz */
+html {
+    font-size: 16px; 
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #212529;
+    padding: 2rem;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+header h1 {
+    font-size: 2.5rem; /* rem kullanımı */
+    color: #2c3e50;
+}
+
+section {
+    background: white;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+}
+
+h2 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #535c68;
+    padding-bottom: 0.5rem;
+}
+
+/* ==========================================
+   68 & 69 & 70. Flexbox Özellikleri
+   ========================================== */
+/* 69. Flex Container Yapısı */
+.flex-container {
+    display: flex;
+    flex-direction: row;       /* Elemanları satır halinde dizer */
+    justify-content: space-between; /* Elemanların arasına eşit boşluk bırakır */
+    align-items: center;       /* Dikeyde merkezler */
+    flex-wrap: wrap;           /* Sığmayan elemanları alt satıra atar */
+    background-color: #f1f2f6;
+    padding: 1rem;
+    border-radius: 6px;
+    gap: 10px;                 /* Elemanlar arası boşluk */
+    margin-top: 1rem;
+}
+
+/* 70. Flex Item Özellikleri */
+.flex-item {
+    background-color: #3498db;
+    color: white;
+    padding: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 4px;
+    min-width: 120px;
+}
+
+/* İlk kutunun kalan tüm boşluğu kaplamasını (esnemesini) sağlıyoruz */
+.item-1 {
+    flex-grow: 1; 
+    background-color: #e74c3c;
+}
+
+/* ==========================================
+   71 & 72. Responsive ve Ölçü Birimleri
+   ========================================== */
+.unit-box {
+    background-color: #ffeaa7;
+    padding: 1rem;
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+    
+    /* Ölçü birimleri testi */
+    width: 100%;        /* Yüzde birimi */
+    min-height: 15vh;   /* Ekran yüksekliğinin %15'i kadar alan kaplar */
+}
+
+.responsive-card {
+    background-color: #2ecc71;
+    color: white;
+    padding: 2rem;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+/* ==========================================
+   71. Media Queries (Mobil Uyumluluk)
+   ========================================== */
+/* Ekran genişliği 768px veya daha küçük olduğunda (Tablet ve Mobil) çalışacak kurallar */
+@media (max-width: 768px) {
+    body {
+        padding: 1rem; /* Mobilde kenar boşluklarını azalttık */
+    }
+
+    header h1 {
+        font-size: 1.8rem; /* Mobilde başlığı küçülttük */
+    }
+
+    .flex-container {
+        flex-direction: column; /* Mobilde kutuları alt alta dizer */
+        align-items: stretch;
+    }
+
+    .responsive-card {
+        background-color: #9b59b6; /* Mobilde kartın rengi değişir */
+        font-size: 0.9rem;          /* Mobilde yazıyı biraz küçülttük */
+    }
+}
