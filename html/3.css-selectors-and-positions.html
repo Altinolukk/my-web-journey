@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 Seçiciler ve Konumlandırma</title>
+    <!-- Harici Google Fonts (Roboto) ve FontAwesome (İkonlar) Bağlantıları -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Kendi CSS dosyamız -->
+    <link rel="stylesheet" href="../css/3.selectors-and-positions-style.css">
+</head>
+<body>
+
+    <header>
+        <h1>CSS3 Metinler, Seçiciler ve Pozisyonlar</h1>
+        <p>Fontlar, İkonlar, Pseudo Yapılar ve Sayfa Düzeni</p>
+    </header>
+
+    <main>
+        <!-- 58, 59, 60. Tipografi ve İkonlar -->
+        <section class="text-demo">
+            <h2>1. Text, Font ve İkon Özellikleri</h2>
+            <p class="custom-text">
+                <i class="fa-solid fa-graduation-cap"></i> Bu paragraf Roboto fontu kullanır, gölgelidir ve başında bir FontAwesome ikonu taşır.
+            </p>
+        </section>
+
+        <!-- 61, 62, 63. Gelişmiş Seçiciler (Pseudo Sınıflar & Elemanlar) -->
+        <section class="selectors-demo">
+            <h2>2. Pseudo Sınıflar / Elemanlar & Nth-Child</h2>
+            <button class="btn-hover">Üzerime Gel (Hover Efekti)</button>
+            
+            <p class="before-after-demo">Bu metnin başına CSS ile içerik eklendi.</p>
+
+            <ul class="list-demo">
+                <li>Öğe 1 (Tek)</li>
+                <li>Öğe 2 (Çift)</li>
+                <li>Öğe 3 (Tek)</li>
+                <li>Öğe 4 (Çift)</li>
+            </ul>
+        </section>
+
+        <!-- 65, 66, 67. Taşma, Konumlandırma ve Float -->
+        <section class="position-demo">
+            <h2>3. Overflow, Position ve Float Kuralları</h2>
+            
+            <!-- Overflow Örneği -->
+            <div class="overflow-box">
+                Bu kutunun içeriği çok uzundur. İçerik kutu boyutunu aştığı için dikey bir kaydırma çubuğu (scroll) otomatik olarak tetiklenir ve tasarımın bozulması engellenir.
+            </div>
+
+            <!-- Position Örnekleri -->
+            <div class="parent-box">
+                Relative Kapsayıcı Kutu
+                <div class="absolute-box">Absolute Kutu</div>
+            </div>
+
+            <!-- Float Örneği -->
+            <div class="clearfix">
+                <div class="float-box">Sola Yaslı Kutu (Float)</div>
+                <p>Float kullanılan elemanların ardından gelen metinler boşlukları dolduracak şekilde elemanın etrafından akar.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Fixed Pozisyon Örneği (Ekranın sağ altında sabit duracak buton) -->
+    <div class="fixed-button">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+
+</body>
+</html>
