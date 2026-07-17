@@ -1,0 +1,123 @@
+/* ==========================================
+   48. Çalışma Hiyerarşisi ve Genel Sıfırlama
+   ========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    /* 57. Box-Sizing: Tüm elemanların kutu hesaplamasını kolaylaştırır */
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f6fa;
+    color: #333;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #e1b12c;
+    padding-bottom: 5px;
+}
+
+/* ==========================================
+   50. Renk Değerleri Gösterimi
+   ========================================== */
+.color-demo div {
+    padding: 10px;
+    margin-bottom: 10px;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+#hex-box {
+    background-color: #3498db; /* Hexadecimal */
+}
+
+#rgb-box {
+    background-color: rgb(46, 204, 113); /* RGB */
+}
+
+#opacity-box {
+    background-color: #e74c3c;
+    opacity: 0.5; /* 50. Opacity Özelliği */
+}
+
+/* ==========================================
+   51 & 52. Arka Plan ve Kenarlıklar
+   ========================================== */
+.bg-card {
+    /* 53. Width, Height ayarları */
+    width: 100%;
+    max-width: 500px;
+    height: 150px;
+    padding: 20px;
+    color: white;
+    
+    /* 51. Arka Plan Özellikleri */
+    background-color: #9b59b6;
+    background-image: url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    /* 52. Border ve Radius */
+    border: 3px solid #8e44ad;
+    border-radius: 12px;
+}
+
+/* ==========================================
+   55 & 56 & 57. Box Model Detayları
+   ========================================== */
+.box-standard, .box-border-box {
+    width: 300px;
+    height: 100px;
+    background-color: #dfe6e9;
+    border: 5px solid #b2bec3;
+    
+    /* 56 & 57. Margin ve Padding kullanımı */
+    padding: 15px;
+    margin: 15px 0;
+}
+
+/* Bu kutuda box-sizing'i kapatıp farkı tarayıcı incelemesinde görebilirsin */
+.box-standard {
+    box-sizing: content-box; 
+}
+
+.box-border-box {
+    box-sizing: border-box; /* Genişlik tam 300px kalır */
+}
+
+/* 54. Display Özellikleri */
+.display-container {
+    margin-top: 20px;
+}
+
+.inline-block-box {
+    /* Yan yana gelirler ama width/height/margin değerlerini kabul ederler */
+    display: inline-block; 
+    background-color: #ffeaa7;
+    padding: 10px;
+    margin-right: 10px;
+    width: 150px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+}
