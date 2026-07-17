@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 Temelleri ve Box Model</title>
+    <!-- Harici CSS dosyamızı bağlıyoruz -->
+    <link rel="stylesheet" href="../css/2.box-model-style.css">
+</head>
+<body>
+
+    <header>
+        <h1>CSS3 Temelleri ve Kutular (Box Model)</h1>
+        <p>Seçiciler, Renkler, Arka Planlar ve Kutu Modeli Çalışması</p>
+    </header>
+
+    <main>
+        <!-- 47, 50. Renkler ve Temel Seçiciler -->
+        <section class="color-demo">
+            <h2>1. Renk Formatları ve Seçiciler</h2>
+            <div id="hex-box">Hexadecimal Renk (#3498db)</div>
+            <div id="rgb-box">RGB Renk (rgb(46, 204, 113))</div>
+            <div id="opacity-box">Opacity & Transparanlık (%50 Görünürlük)</div>
+        </section>
+
+        <!-- 51, 52. Arka Plan ve Border-Radius -->
+        <section class="background-demo">
+            <h2>2. Arka Plan ve Kenarlık Yapıları</h2>
+            <div class="bg-card">
+                <h3>Arka Plan Resmi ve Border Radius</h3>
+                <p>Kavisli kenarlar ve merkezlenmiş arka plan alanı.</p>
+            </div>
+        </section>
+
+        <!-- 53, 54, 55, 56, 57. Box Model (Genişlik, Margin, Padding, Box-Sizing) -->
+        <section class="box-model-demo">
+            <h2>3. Box Model ve Eleman Tipleri (Display)</h2>
+            
+            <div class="box-standard">
+                <strong>Normal Kutu:</strong> Padding ve Border genişliğe eklenir.
+            </div>
+
+            <div class="box-border-box">
+                <strong>Box-Sizing (Border-Box):</strong> Padding ve Border genişliğe dahildir!
+            </div>
+
+            <div class="display-container">
+                <span class="inline-block-box">Inline-Block Kutu 1</span>
+                <span class="inline-block-box">Inline-Block Kutu 2</span>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
